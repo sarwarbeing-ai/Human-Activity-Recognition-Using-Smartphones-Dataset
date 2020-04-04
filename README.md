@@ -36,12 +36,13 @@ The run_analysis.R performing a wide  range of tasks from merging to create an i
 
 2.Extracting only the measurements on the mean and standard deviation for each measurement
 (a) Reading column names from the dataset obtained from merging all data set  
-(b) Create a boolean  vector using regular expression  for defining ID, mean and standard deviation and this will be used to extrcat columns from the dataset obtained from merging all data sets 
+(b) Create a boolean  vector using regular expression  for defining activity Id and subject Id , mean and standard deviation for each measurement  and this will be used to extract columns from the dataset obtained from merging all data sets 
 (c) extract columns from merged data set using the vector defined in (b)
+The resultant dataset will contain only columns subjectID ,activityID and all columns containing mean and std as a substring.
 
 
 3.Uses descriptive activity names to name the activities in the data set
-
+Merge the activity_labels dataset and the dataset extrcated in 2.c into a single data set by activityID
 
 4.Appropriately labels the data set with descriptive variable names.
 
